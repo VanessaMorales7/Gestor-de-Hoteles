@@ -1,0 +1,36 @@
+<i (click)="open(mymodal)" class="fa fa-edit fs-2" id="modify-sc"></i>
+
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Modificar</h4>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="saveData(formTemplate)" #formTemplate="ngForm">
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="Carlo" class="label-modal-sc">Ingrese el nombre</label>
+          <input type="text" class="form-control" id="field12" name="field1" ngModel>
+        </div>
+        <div class="form-group col-12">
+          <label for="exampleEmail" class="label-modal-sc">Ingrese la dirección</label>
+          <input type="text" class="form-control" id="field23" name="field2" ngModel>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="123123" class="label-modal-sc">Ingrese el email</label>
+          <input type="text" class="form-control" id="field33" name="field3" ngModel>
+        </div>
+        <div class="form-group col-12">
+          <label for="123123" class="label-modal-sc">Ingrese el teléfono</label>
+          <input type="number" class="form-control" id="field44" name="field4" ngModel>
+        </div>
+      </div>
+      <div class="row--separation-button"></div>
+      <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>

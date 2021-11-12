@@ -1,0 +1,21 @@
+<section class="card" style="width: 16rem;" id="lista-Hotel-sc">
+  <img class="card-img-top" alt="Thumbnail" src="{{ image }}" id="image-list-sc"> <!--Modify-->
+  <div class="card__content">
+    <div class="card-body">
+      <h5 class="card-title" id="card-title-sc">{{ field1 }}</h5>
+    </div>
+    <hr>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item--position"> <strong>Dirección: </strong> {{ field2 }} </li>
+      <li class="list-group-item list-group-item--position"><strong>Contacto: </strong> {{field3}} {{ field4 }} </li>
+      <li class="list-group-item list-group-item--position" id="estado-sc"> Activo </li>
+    </ul>
+    <div class="card-body card__footer--position">
+      <a id="lista-de-huespedes" *ngIf="numberOption == 1" [routerLink]="['/list', 'Huespedes', field1]"
+        routerLinkActive="active" class="card-link">Lista de Huespedes</a>
+      <app-modal-modifier-items [id]="id" [field1]="field1" [field2]="field2" [field3]="field3" [field4]="field4"
+        [numberOption]="numberOption" [items]="items"></app-modal-modifier-items> &nbsp;
+      <i (click)="delete(id, field1)" class="fa fa-trash fs-2"></i>
+    </div>
+  </div>
+</section>

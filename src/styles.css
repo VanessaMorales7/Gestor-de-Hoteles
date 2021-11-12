@@ -1,0 +1,549 @@
+body {
+    margin: 0px auto;
+    padding: 0%;
+    text-align: center;
+}
+
+#sidebar-sc {
+    background-image: url(../src/assets/images/fondo-sidebar.jpg);
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+#section-title-sc {
+    padding: 20px;
+}
+
+#navbar-title-sc {
+    font-weight: 500;
+}
+
+#estado-sc {
+    background-color:  rgba(57, 207, 82, 1);
+    color: #fff;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.container-midle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 5% auto;
+}
+
+#card-title-sc {
+    margin-bottom: -10px;
+}
+
+#hometitle-sc {
+    font-size: 70px;
+    color: rgb(3, 21, 51);
+    font-weight: bold;
+    margin-left: -65px;
+
+}
+
+#sidebar-title {
+    color: rgb(3, 21, 51);
+}
+
+#listah-sc {
+    height: 110px;
+    width: 110px;
+    margin: 3% auto;
+    margin-bottom: 8%;
+}
+
+#creah-sc {
+    height: 140px;
+    width: 140px;
+    margin: auto;
+}
+
+#card-one {
+    transition: 3ms linear;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+#card-two {
+    transition: 3ms linear;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+#card-one:hover {
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#card-two:hover {
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#content {
+    text-align: center;
+}
+
+#field1, #field2, #field3, #field4 {
+    width: 350px;
+}
+
+#field12, #field23, #field33, #field44 {
+    width: 350px;
+}
+
+.label-modal-sc {
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#modal-basic-title {
+    margin: 0px auto;
+}
+  
+input {
+    margin: 0px auto
+}
+
+input:hover {
+    background-color: rgba(192, 220, 229, 0.787);
+    cursor: pointer;
+    border: 1px solid aqua
+}
+
+.row--separation-button {
+    display: block;
+    height: 5vh;
+}
+
+#logo-sc {
+    width: 38px;
+    margin-bottom: 4px;
+    animation: rotate infinite 20s linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.container__separator {
+    display: block;
+    height: 10vh;
+}
+
+#image-list-sc {
+    height: 200px;
+}
+
+.list-group-item{
+    padding: 0.5rem 0rem;
+}
+
+.list-group-item--position {
+    width: 95%;
+    margin-inline-start: auto;
+}
+
+#lista-Hotel-sc {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+#lista-Hotel-sc:hover {
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card__footer--position {
+    display: flex;
+    flex-direction: row;
+}
+
+.card__footer--position a {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-sc {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+#titleL-sc {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.triplet-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#button-section-sc {
+    margin-bottom: 2%;
+}
+
+#btn-crear-sc {
+    background-color: rgb(10, 109, 53);
+}
+
+#btn-crear-sc:hover {
+    background-color:  rgb(16, 119, 60);
+}
+
+#lista-de-huespedes {
+    margin-right: 22px;
+}
+
+#modify-sc {
+    margin-top: 7%;
+}
+
+@media screen and (max-width:320px) {
+
+    #field1, #field2, #field3, #field4 {
+        width: 100%;
+    }
+
+    #field12, #field23, #field33, #field44 {
+        width: 90%;
+    }
+
+   .card {
+      margin: 10% auto;
+   }
+
+    #logo-sc {
+        width: 25%;
+    }
+
+    #navbar-title-sc {
+        font-size: 120%;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+    }
+
+    #section-title-sc {
+        padding: 8%;
+        margin-top: 5%;
+    }
+
+    #hometitle-sc {
+        font-size: 180%;
+        margin: 1% auto;
+    }
+
+    #titleL-sc {
+        margin-top: 8%;
+    }
+}
+  
+@media screen and (min-width: 360px) and (max-width: 374px) {
+    
+    #field1, #field2, #field3, #field4 {
+        width: 100%;
+    }
+
+    #field12, #field23, #field33, #field44 {
+        width: 90%;
+    }
+
+    #navbar-sc {
+        width: 100%;
+    }
+
+    #navbar-title-sc {
+        font-size: 130%;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+    }
+
+    #section-title-sc {
+        padding: 5%;
+        margin-top: 3%;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+        margin: 1% auto;
+    }
+
+    .card {
+        display: block;
+        flex-wrap: wrap;     
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #titleL-sc {
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 410px) {
+    
+    #field1, #field2, #field3, #field4 {
+        width: 100%;
+    }
+
+    #field12, #field23, #field33, #field44 {
+        width: 90%;
+    }
+
+    #navbar-sc {
+        width: 100%;
+        padding-bottom: 6%;
+    }
+
+    #navbar-title-sc {
+        font-size: 155%;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+    }
+
+    #section-title-sc {
+        padding: 5%;
+        margin-top: 3%;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+        margin: 1% auto;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #titleL-sc {
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (min-width: 411px) and (max-width: 539px) {
+    
+    #navbar-sc {
+        width: 100%;
+        margin-bottom: 0%;
+        padding-bottom: 6%;
+    }
+
+    #navbar-title-sc {
+        font-size: 145%;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+    }
+
+    #section-title-sc {
+        padding: 5%;
+        margin-top: 5%;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+        margin: 1% auto;
+    }
+
+    .card {       
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #titleL-sc {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    
+    #navbar-sc {
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    #navbar-title-sc {
+        font-size: 140%;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+    }
+
+    #section-title-sc {
+        margin: 3% auto;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+        margin: 1% auto;
+    }
+
+    .card {
+        margin: 5% auto;
+    }
+    
+    #titleL-sc {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    #navbar-sc {
+        width: 100%;
+    }
+
+    #navbar-title-sc {
+        font-size: 135%;
+    }
+
+    .container__separator {
+        display: none;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-title-sc {
+        margin: 8% auto;
+        margin-top: 13%;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+    }
+
+    .card {
+        margin: 5% auto;
+    }
+
+    #titleL-sc {
+        margin-top: 15%;
+    }
+
+    #titleL-sc {
+        margin-top: 15%;
+    }
+
+    #h2-title-sc {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    
+    #h2-title-sc {
+        margin-top: 10%;
+    }
+
+    #navbar-sc {
+        width: 100%;
+    }
+
+    #navbar-title-sc {
+        font-size: 125%;
+    }
+
+    .container__separator {
+        display: none;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-title-sc {
+        margin: 5% auto;
+        margin-top: 10%;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+    }
+
+    #footer-sc {
+       width: 100%;
+    }
+
+    #titleL-sc {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1300px) {
+
+    #h2-title-sc {
+        margin-top: 10%;
+    }
+    
+    #navbar-sc {
+        width: 100%;
+    }
+
+    #navbar-title-sc {
+        font-size: 125%;
+    }
+
+    .container__separator {
+        display: none;
+    }
+
+    #sidebar-sc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-title-sc {
+        padding: 3%;
+        margin-top: 5%;
+    }
+
+    #hometitle-sc {
+        font-size: 240%;
+        margin-left: -52%;
+    }
+
+    #footer-sc {
+       width: 100%;
+    }
+
+    .card {
+        margin: 5% auto;
+    }
+
+    #titleL-sc {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+

@@ -1,0 +1,22 @@
+<app-header></app-header>
+<app-section-separator></app-section-separator>
+<section class="container container-title">
+    <h2 class="title--position " id="titleL-sc">Bienvenido a la lista de {{ title }}</h2>
+</section>
+<section class="container container-button" id="button-section-sc">
+    <a id="btn-crear-sc" class="btn btn-lg text-light"
+        [routerLink]="['/create', numberOption ? 'Hotel' : 'Huesped', buscarHotel]" routerLinkActive="active">
+        Crear {{ title }}
+    </a>
+</section>
+<section class="container-list container" id="listH-sc">
+    <div class="row triplet-cards">
+        <div class="col-lg-4 m-0" id="{{item.id}}" *ngFor="let item of items;let i = index">
+            <app-item-card [image]="item.image" [id]="item.id" [field1]="item.name" [field2]="item.direction || item.document"
+                [field3]="item.email" [field4]="item.phone" [numberOption]="numberOption"></app-item-card>
+            <app-section-separator></app-section-separator>
+            <!--Modify-->
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

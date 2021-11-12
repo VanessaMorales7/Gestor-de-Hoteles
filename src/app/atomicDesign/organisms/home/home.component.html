@@ -1,0 +1,45 @@
+<app-header></app-header>
+<app-section-separator></app-section-separator>
+<section id="sidebar-sc">
+  <div class="text-dark rounded" id="section-title-sc">
+    <h1 class="fst-italic p-2" id="hometitle-sc">Bienvenido</h1>
+    <h3 class="fst-italic" id="sidebar-title">Haz uso de nuestro gestor hotelero</h3>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-4" id="col-left">
+        <div class="card " style="width: 18rem;" id="card-one">
+          <img src="https://thumbs.dreamstime.com/b/icono-del-cuaderno-y-l%C3%A1piz-132144954.jpg" class="card-img-top"
+            alt="creah-sc" id="creah-sc">
+          <div class="card-body">
+            <h5 class="card-title">Crea tu Hotel</h5>
+            <p class="card-text">
+              Haz click aquí para diligenciar la creación de un nuevo hotel
+            </p>
+            <a class="btn btn-lg bg-warning" [routerLink]="['/create', 'Hotel', '']" routerLinkActive="active">
+              Crear Hotel
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" id="col-right">
+        <div class="card" style="width: 18rem;" id="card-two">
+          <img src="http://assets.stickpng.com/images/59cfc4d2d3b1936210a5ddc7.png" class="card-img-top" alt="listah-sc"
+            id="listah-sc">
+          <div class="card-body">
+            <h5 class="card-title">Lista de Hoteles</h5>
+            <p class="card-text">
+              Haz click aquí para ver la lista de hoteles
+            </p>
+            <a class="btn btn-lg bg-warning text-dark" [routerLink]="['/list', 'Hotel', '']" routerLinkActive="active">
+              Ver Hoteles
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

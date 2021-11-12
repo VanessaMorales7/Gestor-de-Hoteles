@@ -1,0 +1,39 @@
+<app-header></app-header>
+<app-section-separator></app-section-separator>
+<div class="container" id="content">
+  <section class="container container-title mt-5">
+    <h2 class="title--position" id="h2-title-sc">Bienvenido a la creación de un nuevo {{ title }}</h2>
+  </section> <br>
+  <section class="container container-form">
+    <form (ngSubmit)="saveData(formTemplate)" #formTemplate="ngForm">
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="Carlo">Ingrese el {{ field1 }}</label>
+          <input type="text" class="form-control" id="field1" name="field1" ngModel>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="exampleEmail">Ingrese {{ field2 }}</label>
+          <input type="text" class="form-control" id="field2" name="field2" ngModel>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="123123">Ingrese el {{ field3 }}</label>
+          <input type="text" class="form-control" id="field3" name="field3" ngModel>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="123123">Ingrese el {{ field4 }}</label>
+          <input type="number" class="form-control" id="field4" name="field4" ngModel>
+        </div>
+      </div>
+      <div class="row--separation-button"></div>
+      <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+    </form>
+  </section>
+</div>
+<app-section-separator></app-section-separator>
+<app-footer></app-footer>
